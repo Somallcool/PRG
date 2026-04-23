@@ -9,25 +9,33 @@
 <html>
 <head>
     <title>REGISTER</title>
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/register.css">
 </head>
 <body>
-    <h1>REGISTER</h1>
-    <form action="/todo/register" method="post">
-        <table>
-            <tr>
-                <th>고유번호</th>
-                <td><input type="number" name="num"></td>
-            </tr>
-            <tr>
-                <th>이름</th>
-                <td><input type="text" name="name"></td>
-            </tr>
-            <tr>
-                <th>날짜</th>
-                <td><input type="date" name="day"></td>
-            </tr>
-        </table>
-        <button type="submit">등록 하기</button>
-    </form>
+    <div class="main-container">
+        <h1><span>REGISTER</span></h1>
+        <div class="table-style">
+            <form action="/todo/register" method="post">
+                <table>
+                    <tr>
+                        <th>고유번호</th>
+                        <td><input type="number" name="num" class="input-style" placeholder="번호를 입력하세요"></td>
+                    </tr>
+                    <tr>
+                        <th>이름</th>
+                        <td><input type="text" name="name" class="input-style" placeholder="이름을 입력하세요"></td>
+                    </tr>
+                    <tr>
+                        <th>날짜</th>
+                        <td><input type="date" name="day" class="input-style"></td>
+                    </tr>
+                </table>
+                <div class="button-wrapper">
+                    <button type="button" class="btn-style" onclick="location.href='/'">메인으로</button>
+                    <button type="submit" class="btn-style">등록 하기</button>
+                </div>
+            </form>
+        </div>
+    </div>
 </body>
 </html>

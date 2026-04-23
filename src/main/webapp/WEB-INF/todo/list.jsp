@@ -10,35 +10,47 @@
 <html>
 <head>
     <title>LIST</title>
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/list.css">
 </head>
 <body>
-    <h1>LIST</h1>
-    <div>
-        <table>
-            <tr>
-                <th>번호</th>
-                <th>이름</th>
-                <th>날짜</th>
-            </tr>
-            <c:forEach var="todo" items="${list}">
+    <div class="main-container">
+        <h1><span>TODO LIST</span></h1>
+
+        <div class="table-wrapper">
+            <table class="list-table">
+                <thead>
                 <tr>
-                    <td>
-                        <a href="${pageContext.request.contextPath}/todo/modify?num=${todo.num}">
-                            ${todo.num}
-                        </a>
-                    </td>
-                    <td>${todo.name}</td>
-                    <td>${todo.day}</td>
-                    <td>
-                        <a href="${pageContext.request.contextPath}/todo/remove?num=${todo.num}">
-                            삭제하기
-                        </a>
-                    </td>
+                    <th>번호</th>
+                    <th>이름</th>
+                    <th>날짜</th>
+                    <th>관리</th>
                 </tr>
-            </c:forEach>
-        </table>
-        <a href="/">메인으로</a>
-        <a href="/todo/register">REGISTER</a>
+                </thead>
+                <tbody>
+                <c:forEach var="todo" items="${list}">
+                    <tr>
+                        <td class="num-col">
+                            <a href="${pageContext.request.contextPath}/todo/modify?num=${todo.num}">
+                                    ${todo.num}
+                            </a>
+                        </td>
+                        <td>${todo.name}</td>
+                        <td>${todo.day}</td>
+                        <td>
+                            <a href="${pageContext.request.contextPath}/todo/remove?num=${todo.num}" class="remove-link">
+                                삭제
+                            </a>
+                        </td>
+                    </tr>
+                </c:forEach>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="button-group">
+            <button type="button" class="btn-style" onclick="location.href='/'">메인으로</button>
+            <button type="button" class="btn-style" onclick="location.href='/todo/register'">새 등록</button>
+        </div>
     </div>
 </body>
 </html>

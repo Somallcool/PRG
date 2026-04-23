@@ -9,26 +9,34 @@
 <html>
 <head>
     <title>MODIFY</title>
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/modify.css">
+
 </head>
 <body>
-<h1>MODIFY</h1>
-<form action="/todo/modify" method="post">
-    <table>
-        <tr>
-            <th>번호</th>
-            <td><input type="number" name="num" value="${todo.num}" readonly></td>
-        </tr>
-        <tr>
-            <th>이름</th>
-            <td><input type="text" name="name" value="${todo.name}"></td>
-        </tr>
-        <tr>
-            <th>날짜</th>
-            <td><input type="date" name="day" value="${todo.day}"></td>
-        </tr>
-    </table>
-    <button type="submit">수정 완료</button>
-    <button type="button" onclick="location.href='/todo/list'">취소</button>
-</form>
+<div class="main-container">
+    <h1><span>MODIFY</span></h1>
+    <div class="table-style">
+        <form action="/todo/modify" method="post">
+            <table>
+                <tr>
+                    <th>고유번호</th>
+                    <td><input type="number" name="num" class="input-style" value="${todo.num}" readonly></td>
+                </tr>
+                <tr>
+                    <th>이름</th>
+                    <td><input type="text" name="name" class="input-style" value="${todo.name}"></td>
+                </tr>
+                <tr>
+                    <th>날짜</th>
+                    <td><input type="date" name="day" class="input-style" value="${todo.day}"></td>
+                </tr>
+            </table>
+            <div class="button-wrapper">
+                <button type="submit" class="btn-style">수정 완료</button>
+                <button type="button" class="btn-style" onclick="location.href='/todo/list'">취소</button>
+            </div>
+        </form>
+    </div>
+</div>
 </body>
 </html>
