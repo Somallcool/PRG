@@ -32,6 +32,13 @@ public class ModifyController extends HttpServlet {
     @Override
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
 
+        // 1. 요청(Request) 데이터를 UTF-8로 읽겠다고 선언 (이게 없으면 로그가 깨짐)
+        request.setCharacterEncoding("UTF-8");
+
+        // 2. 응답(Response) 데이터를 UTF-8로 보내겠다고 선언
+        response.setCharacterEncoding("UTF-8");
+        response.setContentType("text/html; charset=UTF-8");
+
         System.out.println("modifyController....doPost");
 
         TodoDTO dto = new TodoDTO();
