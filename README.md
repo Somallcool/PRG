@@ -1,9 +1,9 @@
 # PRG
-Post Redirect Get
+Post Redirect Get(코드는 master 브랜치에 넣어두었습니다.)
 
 # 📝 My Todo Web Project
 
-Java Servlet과 JSP를 활용하여 만든 백엔드 중심의 Todo 관리 웹 어플리케이션입니다.
+Java Servlet과 JSP를 활용하여 만든 백엔드 중심의 CRUD 웹 어플리케이션입니다.
 
 ## 🚀 기술 스택
 - **Language:** Java 11
