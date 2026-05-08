@@ -44,8 +44,11 @@ Java Servlet과 JSP, html을 활용하여 만든 백엔드 중심의 CRUD 웹 �
 <img width="1916" height="986" alt="image" src="https://github.com/user-attachments/assets/d5e95f4f-fd29-4ca8-a070-27c897a2f649" />
 <br>
 <img width="1914" height="984" alt="image" src="https://github.com/user-attachments/assets/beab0e00-840c-4039-8b6f-47391a783864" />
+
 <br>
+
 <br>
+
 - **인증 연동 메뉴:** 로그인 전(LOGIN/JOIN)과 로그인 후(LOGOUT/REGISTER/LIST)의 메뉴 구성을 동적으로 처리했습니다.
 - <img width="1913" height="984" alt="image" src="https://github.com/user-attachments/assets/b676439f-8d2e-4c5c-83c7-0019da11fc0b" />
 <br>
