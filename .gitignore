@@ -44,3 +44,6 @@ bin/
 
 .idea/
 *.xml
+
+# Smart Tomcat 임시 설정 파일 제외
+.smarttomcat/

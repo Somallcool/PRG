@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>LOGIN</title>
+</head>
+<body>
+<div class="main-container">
+    <h1><span>LOGIN</span></h1>
+    <div class="table-style">
+        <form action="/member/login" method="post">
+            <table>
+                <tr>
+                    <th>아이디</th>
+                    <td><input type="text" name="mid" class="input-style" required></td>
+                </tr>
+                <tr>
+                    <th>비밀번호</th>
+                    <td><input type="password" name="mpw" class="input-style" required></td>
+                </tr>
+            </table>
+            <div class="button-wrapper">
+                <button type="submit" class="btn-style">로그인</button>
+                <button type="button" class="btn-style" onclick="location.href='/'">메인으로</button>
+                <button type="button" class="btn-style" onclick="location.href='/member/join'">회원가입</button>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>
