@@ -1,0 +1,111 @@
+/* 공통 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 span {
+    font-size: 3em;
+    color: darkgoldenrod;
+    letter-spacing: 2px;
+}
+
+.main-container {
+    background-color: antiquewhite;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 삐딱한 테이블 레이아웃 대신 중앙 정렬을 위한 폼 스타일링 */
+.table-style {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 450px; /* 전체적인 안정감을 주는 최대 너비 */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 테이블 구조를 세로 배치(Block) 형태로 변경 */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+tr {
+    display: flex;
+    flex-direction: column; /* 라벨이 위, 입력창이 아래로 오도록 설정 */
+    align-items: center;
+    margin-bottom: 20px;   /* 각 입력 항목 사이의 간격 */
+}
+
+th {
+    text-align: center;     /* 글자를 가운데로 */
+    padding-right: 0;       /* 기존 우측 여백 제거 */
+    margin-bottom: 8px;     /* 라벨과 입력창 사이의 간격 */
+    color: #444;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+td {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* 입력창 스타일: 중앙 정렬 및 너비 살짝 확장 */
+.input-style {
+    width: 350px;           /* 시안의 안정감을 위해 너비를 살짝 늘렸습니다 */
+    height: 45px;
+    padding: 0 15px;
+    border: 2px solid darkgoldenrod;
+    border-radius: 5px;
+    background-color: azure;
+    font-size: 16px;
+    text-align: center;     /* placeholder와 입력 텍스트도 가운데로 */
+    outline: none;
+    transition: 0.3s;
+}
+
+.input-style:focus {
+    background-color: #fffaf0;
+    box-shadow: 0 0 8px rgba(184, 134, 11, 0.3);
+}
+
+/* 버튼들을 감싸는 바구니: 버튼이 3개이므로 정렬 조정 */
+.button-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 15px;              /* 버튼 사이의 간격 균등 분할 */
+    margin-top: 25px;
+    width: 100%;
+}
+
+/* 세 개의 버튼이 사이좋게 배치되도록 크기 최적화 */
+.btn-style {
+    width: 130px;           /* 3개 버튼이 들어갈 수 있도록 너비 조정 */
+    height: 55px;           /* 높이 살짝 슬림하게 조정 */
+    background-color: darkgoldenrod;
+    color: white;
+    font-size: 16px;        /* 버튼이 작아진 만큼 글자 크기 최적화 */
+    font-weight: bold;
+    border: 3px solid transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.45s;
+}
+
+/* 마우스 호버 효과 */
+.btn-style:hover {
+    background-color: azure;
+    color: darkgoldenrod;
+    border-color: darkgoldenrod;
+}

@@ -1,0 +1,81 @@
+/* 공통 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 span {
+    font-size: 3em;
+    color: darkgoldenrod;
+}
+
+.main-container {
+    background-color: antiquewhite;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.table-style {
+    margin-top: 30px;
+}
+
+/* 테이블 내부 간격 조절 */
+table {
+    border-collapse: separate;
+    border-spacing: 0 15px;
+}
+
+th {
+    text-align: left;
+    padding-right: 20px;
+    color: #444;
+}
+
+/* 입력창 스타일 */
+.input-style {
+    width: 300px;
+    height: 45px;
+    padding: 0 15px;
+    border: 2px solid darkgoldenrod;
+    border-radius: 5px;
+    background-color: azure;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.input-style:focus {
+    background-color: #fffaf0;
+    box-shadow: 0 0 8px rgba(184, 134, 11, 0.3);
+}
+
+/* 버튼들을 감싸는 바구니 */
+.button-wrapper {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+/* 버튼 스타일 */
+.btn-style {
+    width: 200px;
+    height: 60px;
+    background-color: darkgoldenrod;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border: 3px solid transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.45s;
+}
+
+.btn-style:hover {
+    background-color: azure;
+    color: darkgoldenrod;
+    border-color: darkgoldenrod;
+}
